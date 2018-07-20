@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.example.libanimation.flowlayout.TagFlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/id_tagflowlayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</com.example.libanimation.flowlayout.TagFlowLayout>
