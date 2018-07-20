@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/otherlibs/glin/glin.iml" filepath="$PROJECT_DIR$/otherlibs/glin/glin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/otherlibs/libWSLive/libWSLive.iml" filepath="$PROJECT_DIR$/otherlibs/libWSLive/libWSLive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libanimation/libanimation.iml" filepath="$PROJECT_DIR$/libanimation/libanimation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libglide47/libglide47.iml" filepath="$PROJECT_DIR$/libglide47/libglide47.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librararyforfileprovdider/librararyforfileprovdider.iml" filepath="$PROJECT_DIR$/librararyforfileprovdider/librararyforfileprovdider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librecycleview/librecycleview.iml" filepath="$PROJECT_DIR$/librecycleview/librecycleview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libutils/libutils.iml" filepath="$PROJECT_DIR$/libutils/libutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myapplication2018.iml" filepath="$PROJECT_DIR$/myapplication2018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/otherlibs/otherlibs.iml" filepath="$PROJECT_DIR$/otherlibs/otherlibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p001_fitandroid678/p001_fitandroid678.iml" filepath="$PROJECT_DIR$/p001_fitandroid678/p001_fitandroid678.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p001_fitandroid7/p001_fitandroid7.iml" filepath="$PROJECT_DIR$/p001_fitandroid7/p001_fitandroid7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p002_screen_light/p002_screen_light.iml" filepath="$PROJECT_DIR$/p002_screen_light/p002_screen_light.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p003_animation_lineview/p003_animation_lineview.iml" filepath="$PROJECT_DIR$/p003_animation_lineview/p003_animation_lineview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p004_livedemo/p004_livedemo.iml" filepath="$PROJECT_DIR$/p004_livedemo/p004_livedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p005_toastutils_yuanjiao_doubleclick/p005_toastutils_yuanjiao_doubleclick.iml" filepath="$PROJECT_DIR$/p005_toastutils_yuanjiao_doubleclick/p005_toastutils_yuanjiao_doubleclick.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p006_recycleview_alluses/p006_recycleview_alluses.iml" filepath="$PROJECT_DIR$/p006_recycleview_alluses/p006_recycleview_alluses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p007_viewanimator/p007_viewanimator.iml" filepath="$PROJECT_DIR$/p007_viewanimator/p007_viewanimator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p008_timertask/p008_timertask.iml" filepath="$PROJECT_DIR$/p008_timertask/p008_timertask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p009_flowlayout/p009_flowlayout.iml" filepath="$PROJECT_DIR$/p009_flowlayout/p009_flowlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p010_location/p010_location.iml" filepath="$PROJECT_DIR$/p010_location/p010_location.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p011_lifecycle/p011_lifecycle.iml" filepath="$PROJECT_DIR$/p011_lifecycle/p011_lifecycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p012_interpolator/p012_interpolator.iml" filepath="$PROJECT_DIR$/p012_interpolator/p012_interpolator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p013_updatemanagerpermission/p013_updatemanagerpermission.iml" filepath="$PROJECT_DIR$/p013_updatemanagerpermission/p013_updatemanagerpermission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p014_systemvoices/p014_systemvoices.iml" filepath="$PROJECT_DIR$/p014_systemvoices/p014_systemvoices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p015_view_huxi/p015_view_huxi.iml" filepath="$PROJECT_DIR$/p015_view_huxi/p015_view_huxi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p016_glide37_quan/p016_glide37_quan.iml" filepath="$PROJECT_DIR$/p016_glide37_quan/p016_glide37_quan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p016_glide47_quan/p016_glide47_quan.iml" filepath="$PROJECT_DIR$/p016_glide47_quan/p016_glide47_quan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p020_timer/p020_timer.iml" filepath="$PROJECT_DIR$/p020_timer/p020_timer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment/p031_mokuaihua_viewpager_fragment.iml" filepath="$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment/p031_mokuaihua_viewpager_fragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p048_collapsingtoolbarlayout/p048_collapsingtoolbarlayout.iml" filepath="$PROJECT_DIR$/p048_collapsingtoolbarlayout/p048_collapsingtoolbarlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p048_sinavideoplay_xialaxuanting/p048_sinavideoplay_xialaxuanting.iml" filepath="$PROJECT_DIR$/p048_sinavideoplay_xialaxuanting/p048_sinavideoplay_xialaxuanting.iml" />
+    </modules>
+  </component>
+</project>
