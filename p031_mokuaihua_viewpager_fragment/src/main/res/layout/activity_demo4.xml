@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black858585">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+            <!--<com.example.p031_mokuaihua_viewpager_fragment.demo3.utils.NoScrollViewPager
+                android:id="@+id/viewpager_my"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+
+            <com.example.p031_mokuaihua_viewpager_fragment.demo4.widgets.ViewPagerSlide
+                android:id="@+id/viewpager_my"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+
+            <!--app:indicator_interval="30dp"-->
+            <com.example.p031_mokuaihua_viewpager_fragment.demo4.widgets.DotIndicatorView
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                app:indicator_circle_radius="4dp"
+                app:indicator_current_color="#FF01022C"
+                app:indicator_current_size="30dp"
+                app:indicator_current_style="large"
+                app:indicator_normal_color="#FF9297BC"
+                app:indicator_padding="8dp"
+                app:indicator_position="center"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

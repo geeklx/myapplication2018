@@ -1,0 +1,155 @@
+apply plugin: 'com.android.application'
+
+def demo1 = '0001';//DemoAPK1
+def demo2 = '0002';//DemoAPK2
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+//    signingConfigs {
+//        debug {
+//            keyAlias '****'
+//            keyPassword '****'
+//            storeFile file('签名文件.jks路径')
+//            storePassword '****'
+//        }
+//        release {
+//            keyAlias '****'
+//            keyPassword '****'
+//            storeFile file('签名文件.jks路径')
+//            storePassword '****'
+//        }
+//    }
+
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    defaultConfig {
+        applicationId "com.example.p031_mokuaihua_viewpager_fragment"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+
+        ndk {
+            moduleName "native-modbus-jni,libxmediaplayer"
+            ldLibs "log", "z", "m", "android", "c"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+        sourceSets.main {
+            jni.srcDirs = []
+            //LOCAL_LDFLAGS += -fuse-ld=bfd
+            //jni.srcDirs 'src/main/jni'
+            jniLibs.srcDir 'src/main/libs'
+
+        }
+        signingConfig signingConfigs.debug
+
+        manifestPlaceholders = [
+                DEMO3_CONFIG_VALUE: ".demo3.factorys.Demo3Factory",
+                DEMO4_CONFIG_VALUE: ".demo4.factorys.Demo4Factory"
+        ]
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    def int minSdk = 21;
+    def int targetSdk = 27;
+    def String appId = 'com.example.p031_mokuaihua_viewpager_fragment';
+
+    def int vCode = 1;
+    def String vNameCode = vCode + "";
+
+    // 自定义输出配置 classpath 'com.android.tools.build:gradle:3.0.0'
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+//            outputFileName = "${variant.name}-${variant.versionName}.apk"
+            outputFileName = "${variant.versionName}.apk"
+        }
+    }
+
+    // Specifies two flavor dimensions.
+    flavorDimensions "keep", "change1"
+    productFlavors {
+        demo {
+            dimension "keep"
+            minSdkVersion minSdk
+            applicationId appId
+            targetSdkVersion targetSdk
+            versionCode vCode
+            multiDexEnabled true
+            renderscriptTargetApi 21
+            renderscriptSupportModeEnabled true
+            ndk {
+                moduleName "native-modbus-jni,libxmediaplayer"
+                ldLibs "log", "z", "m", "android", "c"
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+            sourceSets.main {
+                jni.srcDirs = []
+                jniLibs.srcDir 'src/main/libs'
+            }
+            signingConfig signingConfigs.debug
+        }
+        apk1 {
+            dimension "change1"
+            versionName "DemoAPK1_" + "T_" + vNameCode + "_" + demo1
+            def stValue = "ceshi"
+            manifestPlaceholders = [DEMO2_CONFIG_VALUE: ".demo2.factorys.Demo2Factory1", STATISTICS_VALUE: stValue]
+        }
+        apk2 {
+            dimension "change1"
+            versionName "DemoAPK2_" + "D_" + vNameCode + "_" + demo2
+            def stValue = "xianshang"
+            manifestPlaceholders = [DEMO2_CONFIG_VALUE: ".demo2.factorys.Demo2Factory2", STATISTICS_VALUE: stValue]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support:cardview-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+
+    implementation 'com.android.support:multidex:1.0.1'
+
+}

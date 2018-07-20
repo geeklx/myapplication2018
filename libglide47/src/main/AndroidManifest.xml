@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geek.libglide47">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity android:name=".GlideMainActivity">
+            <intent-filter>
+                <action android:name="hs.act.GlideMainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GlideMainActivityalluse">
+            <intent-filter>
+                <action android:name="hs.act.GlideMainActivityalluse" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GlideMainActivityjiugongge"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.GlideMainActivityjiugongge" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".demo.imageutil.SingleImageActivity"
+            android:theme="@style/AppCompatFullscreenStyle" />
+        <activity
+            android:name=".demo.imageutil.SingleImagePhotoViewActivity"
+            android:theme="@style/AppCompatFullscreenStyle" />
+        <activity
+            android:name=".demo.imageutil.ImagesActivity"
+            android:theme="@style/ImagesStyle" />
+    </application>
+
+</manifest>

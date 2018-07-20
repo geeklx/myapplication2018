@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="demo1的fragment1页面"
+        android:textColor="#FF5001"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:orientation="vertical">
+
+        <!--亮度延时-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="休眠"
+                android:textColor="#F5C382"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/volum_num_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15px"
+                android:text="1分钟"
+                android:textColor="#F5C382"
+                android:textSize="20px" />
+
+            <ImageView
+                android:id="@+id/light_delay_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                android:background="@drawable/add_icon"
+                android:visibility="visible" />
+
+            <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="20px"
+                android:layout_weight="1">
+                <!-- Rotation: CW90 or CW270 -->
+                <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+                    android:id="@+id/time_seek"
+                    style="@style/Widget.SeekBar.Set"
+                    app:seekBarRotation="CW270" />
+            </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+
+            <ImageView
+                android:id="@+id/light_delay_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15px"
+                android:background="@drawable/decrease_icon"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <!--屏幕亮度-->
+        <LinearLayout
+            android:id="@+id/light_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="屏幕常亮"
+                android:textColor="#F5C382"
+                android:textSize="24px" />
+
+            <CheckBox
+                android:id="@+id/light_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:background="@drawable/set_toggle_selector"
+                android:button="@null"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/light_check_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="关"
+                android:textColor="#F5C382"
+                android:textSize="20px"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
