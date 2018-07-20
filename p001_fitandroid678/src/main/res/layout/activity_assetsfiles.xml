@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click_txt"
+            android:text="打开ASSETS中的TXT2"
+            android:visibility="visible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click_gson"
+            android:text="打开ASSETS中的GSON.JSON2"
+            android:visibility="visible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click_fastjson"
+            android:text="打开ASSETS中的FAST.JSON2"
+            android:visibility="visible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click_mp3"
+            android:text="打开ASSETS中的MP3"
+            android:visibility="visible" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click_mp32"
+            android:text="打开RAW中的MP3"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="测试" />
+
+    </LinearLayout>
+</ScrollView>

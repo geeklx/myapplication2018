@@ -1,0 +1,222 @@
+apply plugin: 'com.android.application'
+
+
+def demo = '0000';//DemoAPK
+def demo1 = '0001';//DemoAPK1
+def demo2 = '0002';//DemoAPK2
+def demo3 = '0003';//DemoAPK3
+def demo4 = '0004';//DemoAPK4
+def demo5 = '0005';//DemoAPK5
+def demo6 = '0006';//DemoAPK6
+
+
+android {
+
+//    signingConfigs {
+//        debug {
+//            keyAlias '****'
+//            keyPassword '****'
+//            storeFile file('签名文件.jks路径')
+//            storePassword '****'
+//        }
+//        release {
+//            keyAlias '****'
+//            keyPassword '****'
+//            storeFile file('签名文件.jks路径')
+//            storePassword '****'
+//        }
+//    }
+
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    defaultConfig {
+        applicationId "com.shining.p010_recycleviewall"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+
+        ndk {
+            moduleName "native-modbus-jni,libxmediaplayer"
+            ldLibs "log", "z", "m", "android", "c"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+        sourceSets.main {
+            jni.srcDirs = []
+            //LOCAL_LDFLAGS += -fuse-ld=bfd
+            //jni.srcDirs 'src/main/jni'
+            jniLibs.srcDir 'src/main/libs'
+
+        }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+
+        manifestPlaceholders = [
+                SHOUCANG_CONFIG_VALUE0: ".shoucang.factorys.ShoucangFactory0"
+        ]
+
+    }
+    buildTypes {
+        release {
+//            minifyEnabled true
+//            zipAlignEnabled true
+//            shrinkResources false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.debug
+
+            multiDexEnabled true
+            minifyEnabled true
+            //移除无用的资源文件
+            shrinkResources true
+            zipAlignEnabled true
+            debuggable false
+            jniDebuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.debug
+
+        }
+    }
+
+    def int minSdk = 21;
+    def int targetSdk = 27;
+    def String appId = 'com.shining.p010_recycleviewall';
+
+    def int vCode = 1;
+    def String vNameCode = vCode + "";
+
+    // 自定义输出配置 classpath 'com.android.tools.build:gradle:3.0.0'
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+//            outputFileName = "${variant.name}-${variant.versionName}.apk"
+            outputFileName = "${variant.versionName}.apk"
+        }
+    }
+
+    // Specifies two flavor dimensions.
+    flavorDimensions "keep", "change1"
+    productFlavors {
+        recycleviewdemo {
+            dimension "keep"
+            minSdkVersion minSdk
+            applicationId appId
+            targetSdkVersion targetSdk
+            versionCode vCode
+
+            multiDexEnabled true
+            renderscriptTargetApi 21
+            renderscriptSupportModeEnabled true
+            ndk {
+                moduleName "native-modbus-jni,libxmediaplayer"
+                ldLibs "log", "z", "m", "android", "c"
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+            sourceSets.main {
+                jni.srcDirs = []
+                jniLibs.srcDir 'src/main/libs'
+            }
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            signingConfig signingConfigs.debug
+        }
+        apk {
+            dimension "change1"
+            versionName "DemoAPK_" + "T_" + demo
+            def stValue = false
+            manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory", STATISTICS_VALUE: stValue]
+        }
+        apk1 {
+            dimension "change1"
+            versionName "DemoAPK1_" + "T_" + demo1
+            def stValue = false
+            manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory1", STATISTICS_VALUE: stValue]
+        }
+        apk2 {
+            dimension "change1"
+            versionName "DemoAPK2_" + "T_" + demo2
+            def stValue = false
+            manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory2", STATISTICS_VALUE: stValue]
+        }
+        apk3 {
+            dimension "change1"
+            versionName "DemoAPK3_" + "T_" + demo3
+            def stValue = false
+            manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory3", STATISTICS_VALUE: stValue]
+        }
+        apk4 {
+            dimension "change1"
+            versionName "DemoAPK4_" + "T_" + demo4
+            def stValue = false
+            manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory4", STATISTICS_VALUE: stValue]
+        }
+        apk5 {
+            dimension "change1"
+            versionName "DemoAPK5_" + "T_" + demo5
+            def stValue = false
+            manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory5", STATISTICS_VALUE: stValue]
+        }
+        apk6 {
+            dimension "change1"
+            versionName "DemoAPK6_" + "D_" + demo6
+            def stValue = true
+            manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory6", STATISTICS_VALUE: stValue]
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support:cardview-v7:27.1.0'
+    // local jar file
+    implementation files('libs/alipay-sdk-java20161226110022.jar')
+    implementation files('libs/alipay-sdk-java20161226110022-source.jar')
+    implementation files('libs/commons-logging-1.1.1.jar')
+    implementation files('libs/commons-logging-1.1.1-sources.jar')
+    //the third file
+    annotationProcessor  'com.jakewharton:butterknife-compiler:8.6.0'
+    implementation 'com.jakewharton:butterknife:8.6.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.geeklx:library_hios:1.0.4'
+    implementation 'com.android.support:multidex:1.0.1'
+
+
+    implementation project(':otherlibs:glin')
+//    compile project(':demojavalibrary')
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.alibaba:fastjson:1.2.17'
+    implementation 'com.squareup.okio:okio:1.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation files('libs/libammsdk.jar')
+
+
+}

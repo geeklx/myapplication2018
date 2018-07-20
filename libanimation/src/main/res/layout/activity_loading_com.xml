@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="72dp"
+    android:paddingLeft="72dp"
+    android:paddingRight="72dp"
+    android:paddingTop="72dp">
+
+    <!--  android:background="@drawable/aa_dialog_bg"-->
+    <!--  android:src="@mipmap/network_loading_new"-->
+    <ImageView
+        android:id="@+id/loadView_img"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/iv_loading_animationlist" />
+
+</RelativeLayout>

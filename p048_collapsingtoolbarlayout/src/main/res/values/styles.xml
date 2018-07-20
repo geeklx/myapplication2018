@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--phone-->
+        <item name="windowNoTitle">true</item>
+        <!--pingban-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <item name="android:windowActionBar">false</item>
+        <!--指定toolbar弹出菜单样式-->
+        <item name="actionOverflowMenuStyle">@style/toolbarMenuStyle</item>
+    </style>
+
+    <style name="style_textsize">
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="style_textsize1">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--自定义toolbar菜单样式-->Widget.AppCompat.PopupMenu.Overflow
+
+    <style name="toolbarMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:src">@drawable/ic_drawer_home2</item>
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">@color/material_deep_teal_500</item>
+        <!-- 弹出层垂直方向上的偏移，负值会覆盖toolbar -->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">-2dp</item>
+        <!--文字颜色-->
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+
+</resources>

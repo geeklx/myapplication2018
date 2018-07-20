@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANIM_FRAME:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <com.yanzhikai.pictureprogressbar.PictureProgressBar
+        android:id="@+id/pb_1"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        app:animMode="ANIM_FRAME"
+        app:backgroundDrawable="@drawable/background_1"
+        app:barDrawable="@drawable/bar_1"
+        app:drawableHeightOffset="0dp"
+        app:isSetBar="true"
+        app:max="100"
+        app:progressHeight="18dp"
+        app:progressHeightOffset="15dp"
+        app:refreshTime="100"
+        app:rotateRate="30"
+        app:scaleMax="1.8"
+        app:scaleMin="0.5"
+        app:scaleRate="0.1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANIM_NULL:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <com.yanzhikai.pictureprogressbar.PictureProgressBar
+        android:id="@+id/pb_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:animMode="ANIM_NULL"
+        app:drawable="@drawable/b333"
+        app:gradientEndColor="#ffff00"
+        app:gradientStartColor="#ff0000"
+        app:halfDrawableHeight="20dp"
+        app:halfDrawableWidth="20dp"
+        app:isGradient="true"
+        app:max="1000"
+        app:roundX="15dp"
+        app:roundY="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANIM_ROTATE:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <com.yanzhikai.pictureprogressbar.PictureProgressBar
+        android:id="@+id/pb_3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:animMode="ANIM_ROTATE"
+        android:layout_marginLeft="5dp"
+        app:drawable="@drawable/test_shape"
+        app:gradientEndColor="#00ff00"
+        app:gradientStartColor="#ff00ff"
+        app:halfDrawableHeight="14dp"
+        app:halfDrawableWidth="14dp"
+        app:isGradient="true"
+        app:isRound="false"
+        app:isSetBar="true"
+        app:max="1000"
+        app:progressHeight="10dp"
+        app:rotateRate="15"
+        app:roundX="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANIM_SCALE:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <com.yanzhikai.pictureprogressbar.PictureProgressBar
+        android:id="@+id/pb_4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:animMode="ANIM_SCALE"
+        app:drawable="@drawable/test_shape"
+        app:gradientEndColor="#00ff00"
+        app:gradientStartColor="#0000ff"
+        app:halfDrawableHeight="15dp"
+        app:halfDrawableWidth="15dp"
+        app:isGradient="true"
+        app:isSetBar="true"
+        app:max="1000"
+        app:progressHeight="10dp"
+        app:roundX="20dp"
+        app:scaleMax="1.6"
+        app:scaleMin="0.4"
+        app:scaleRate="0.1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANIM_ROTATE_SCALE:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <com.yanzhikai.pictureprogressbar.PictureProgressBar
+        android:id="@+id/pb_5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:animMode="ANIM_ROTATE_SCALE"
+        app:drawable="@drawable/test_shape"
+        app:gradientEndColor="#00ffaa"
+        app:gradientStartColor="#aa00ff"
+        app:halfDrawableHeight="15dp"
+        app:halfDrawableWidth="15dp"
+        app:isGradient="true"
+        app:isSetBar="true"
+        app:max="1000"
+        app:progressHeight="10dp"
+        app:rotateRate="15"
+        app:roundX="20dp"
+        app:scaleMax="1.6"
+        app:scaleMin="0.4"
+        app:scaleRate="0.1" />
+
+</LinearLayout>

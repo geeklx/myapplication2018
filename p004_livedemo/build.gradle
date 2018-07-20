@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+//    signingConfigs {
+//        debug {
+//            keyAlias '****'
+//            keyPassword '****'
+//            storeFile file('签名文件.jks路径')
+//            storePassword '****'
+//        }
+//        release {
+//            keyAlias '****'
+//            keyPassword '****'
+//            storeFile file('签名文件.jks路径')
+//            storePassword '****'
+//        }
+//    }
+
+    defaultConfig {
+        applicationId "com.example.p004_livedemo"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        ndk {
+            moduleName "native-modbus-jni,libxmediaplayer"
+            ldLibs "log", "z", "m", "android", "c"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+
+        signingConfig signingConfigs.debug
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.android.support:design:$supportLibVersion"
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "com.android.support:support-annotations:$supportLibVersion"
+    implementation "com.android.support:recyclerview-v7:$supportLibVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+//    implementation 'com.github.WangShuo1143368701:WSLiveDemo:v1.5'
+    implementation project(':otherlibs:libWSLive')
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+}

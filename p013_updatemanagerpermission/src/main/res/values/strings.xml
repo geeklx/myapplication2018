@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">p013_updatemanager</string>
+
+    <!--Keyboard 相关-->
+    <string name="keyboard_hide_soft_input">Hide Soft Input</string>
+    <string name="keyboard_show_soft_input">Show Soft Input</string>
+    <string name="keyboard_toggle_soft_input">Toggle Soft Input</string>
+    <string name="keyboard_show_dialog">Show Dialog</string>
+    <string name="keyboard_close_dialog">Close Dialog</string>
+</resources>
