@@ -77,8 +77,8 @@ public class Demo4Activity extends AppCompatActivity {
     }
 
     private void findview() {
-        mRecyclerView = (RecyclerView) findViewById(R.id.list);
-        btn1 = (Button) findViewById(R.id.btn1);
+        mRecyclerView = findViewById(R.id.list);
+        btn1 = findViewById(R.id.btn1);
 
         GridLayoutManager layoutManager = new GridLayoutManager(this, SPAN_COUNT, OrientationHelper.VERTICAL, false);
         layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {

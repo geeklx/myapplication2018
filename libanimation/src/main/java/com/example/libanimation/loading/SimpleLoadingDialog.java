@@ -27,7 +27,7 @@ public class SimpleLoadingDialog {
     private void init() {
         mDialog = new Dialog(mContext, R.style.custom_dialog);
         mDialogContentView = LayoutInflater.from(mContext).inflate(R.layout.activity_loading_com, null);
-        iv = (ImageView) mDialogContentView.findViewById(R.id.loadView_img);
+        iv = mDialogContentView.findViewById(R.id.loadView_img);
         ad = (AnimationDrawable) iv.getBackground();
 
         mDialog.setContentView(mDialogContentView);

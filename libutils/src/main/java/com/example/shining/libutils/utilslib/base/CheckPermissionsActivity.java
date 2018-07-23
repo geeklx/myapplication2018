@@ -61,8 +61,8 @@ public class CheckPermissionsActivity extends AppCompatActivity {
 				if (null != needRequestPermissonList
 						&& needRequestPermissonList.size() > 0) {
 					String[] array = needRequestPermissonList.toArray(new String[needRequestPermissonList.size()]);
-					Method method = getClass().getMethod("requestPermissions", new Class[]{String[].class,
-							int.class});
+					Method method = getClass().getMethod("requestPermissions", String[].class,
+                            int.class);
 
 					method.invoke(this, array, PERMISSON_REQUESTCODE);
 				}

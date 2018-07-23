@@ -211,12 +211,12 @@ public class Demo1Fragment1 extends BaseIndexNetFragment implements View.OnClick
     }
 
     private void findview(View rootView) {
-        timeSeek = (VerticalSeekBar) rootView.findViewById(R.id.time_seek);
-        volum_num_min = (TextView) rootView.findViewById(R.id.volum_num_min);
-        lightDelayAdd = (ImageView) rootView.findViewById(R.id.light_delay_add);
-        lightDelayDecrease = (ImageView) rootView.findViewById(R.id.light_delay_decrease);
-        lightCheck = (CheckBox) rootView.findViewById(R.id.light_check);
-        lightCheckDescription = (TextView) rootView.findViewById(R.id.light_check_description);
+        timeSeek = rootView.findViewById(R.id.time_seek);
+        volum_num_min = rootView.findViewById(R.id.volum_num_min);
+        lightDelayAdd = rootView.findViewById(R.id.light_delay_add);
+        lightDelayDecrease = rootView.findViewById(R.id.light_delay_decrease);
+        lightCheck = rootView.findViewById(R.id.light_check);
+        lightCheckDescription = rootView.findViewById(R.id.light_check_description);
     }
 
     /**

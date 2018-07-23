@@ -35,11 +35,7 @@ public class LocServer {
     }
 
     public boolean enStarting(){
-        if (client!=null&&client.isStarted()){
-            return true;
-        }else {
-            return false;
-        }
+        return client != null && client.isStarted();
     }
 
     public void stop(){

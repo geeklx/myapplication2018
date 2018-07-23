@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         setContentView(R.layout.activity_main);
         refresh();
         donetwork();
-        jzVideoPlayerStandard = (JZVideoPlayerStandard) findViewById(R.id.player_list_video);
+        jzVideoPlayerStandard = findViewById(R.id.player_list_video);
         jzVideoPlayerStandard.setUp(url, JZVideoPlayerStandard.SCREEN_WINDOW_NORMAL, "饺子闭眼睛");
         Glide.with(this).load("http://p.qpic.cn/videoyun/0/2449_43b6f696980311e59ed467f22794e792_1/640").into(jzVideoPlayerStandard.thumbImageView);
 
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     }
 
     private void donetwork() {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view1);
+        recyclerView = findViewById(R.id.recycler_view1);
         mAdapter = new RecycleAdapter2(this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(mAdapter);
@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     }
 
     private void refresh() {
-        mSwipeLayout = (SwipeRefreshLayout) findViewById(R.id.refresh);
+        mSwipeLayout = findViewById(R.id.refresh);
         mSwipeLayout.setOnRefreshListener(this);
         mSwipeLayout.setColorSchemeColors(getResources().getIntArray(R.array.swipeRefreshColors));
 //        mSwipeLayout.setColorScheme(getResources().getColor(android.R.color.holo_blue_bright),

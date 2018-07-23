@@ -34,14 +34,14 @@ public class TimerFinishActivity extends Activity implements MediaPlayer.OnPrepa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer_finish);
         this.setFinishOnTouchOutside(false);
-        bt_ok = (Button) findViewById(R.id.bt_ok);
-        rl_timer_finish = (RelativeLayout) findViewById(R.id.rl_timer_finish);
+        bt_ok = findViewById(R.id.bt_ok);
+        rl_timer_finish = findViewById(R.id.rl_timer_finish);
         //此处发广播来判断当前是否有占用MediaPlayer的应用 如果有就暂停ta 等待倒计时铃声结束 继续bufen
         sendBroadcast(new Intent(ConstantUtil.BROADCAST_ACTION_ALARM_START));
         //另外的地方接收广播的方法bufen
 //        haveMediaPlayer();
 
-        PowerManager pm = (PowerManager) getSystemService(this.POWER_SERVICE);
+        PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
         wakeLock = pm.newWakeLock(
                 PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP | PowerManager.ON_AFTER_RELEASE, "MyWakeLock");
         wakeLock.acquire();

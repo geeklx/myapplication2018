@@ -22,7 +22,7 @@ public class GetAssetsFileMP3TXTJSONAPKUtil implements MediaPlayer.OnPreparedLis
     private static Context mContext;
 
     private GetAssetsFileMP3TXTJSONAPKUtil(Context context) {
-        this.mContext = context;
+        mContext = context;
     }
 
     public static GetAssetsFileMP3TXTJSONAPKUtil getInstance(Context context) {

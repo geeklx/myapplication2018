@@ -50,11 +50,8 @@ public class MobileUtils {
                 = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
         boolean gps = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
         boolean network = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
-        if (gps || network) {
-            return true;
-        }
+        return gps || network;
 
-        return false;
     }
 
     public static boolean isNetworkConnected(Context context) {

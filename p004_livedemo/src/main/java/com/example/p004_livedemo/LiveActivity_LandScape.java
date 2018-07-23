@@ -37,7 +37,7 @@ public class LiveActivity_LandScape extends AppCompatActivity {
      * 设置推流参数
      */
     public void initLiveConfig() {
-        mLiveCameraView = (StreamLiveCameraView) findViewById(R.id.stream_previewView);
+        mLiveCameraView = findViewById(R.id.stream_previewView);
 
         //参数配置 start
         streamAVOption = new StreamAVOption();

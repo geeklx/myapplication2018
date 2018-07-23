@@ -281,8 +281,8 @@ public class TimerPicker extends View {
      * @param type     1表示向下绘制，-1表示向上绘制
      */
     private void drawOtherText(Canvas canvas, int position, int type) {//下面的字
-        float d = (float) (MARGIN_ALPHA * mMinTextSize * position + type
-                * mMoveLen);
+        float d = MARGIN_ALPHA * mMinTextSize * position + type
+                * mMoveLen;
         float scale = parabola(mViewHeight / 4.0f, d);
 //        float size = (mMaxTextSize - mMinTextSize) * scale + mMinTextSize;
         float size = 50;
@@ -315,8 +315,8 @@ public class TimerPicker extends View {
      */
     private void drawOtherText(Canvas canvas, int position, int type, int index) {//上面的字
 
-        float d = (float) (MARGIN_ALPHA * mMinTextSize * position + type
-                * mMoveLen);
+        float d = MARGIN_ALPHA * mMinTextSize * position + type
+                * mMoveLen;
 
         float scale = parabola(mViewHeight / 4.0f, d);
 //        float size = (mMaxTextSize - mMinTextSize) * scale + mMinTextSize;

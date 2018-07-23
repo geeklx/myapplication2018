@@ -29,7 +29,7 @@ public class TabFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_main4_fragment, container, false);
 
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(
+        RecyclerView recyclerView = view.findViewById(
                 R.id.fragment_list_rv);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());

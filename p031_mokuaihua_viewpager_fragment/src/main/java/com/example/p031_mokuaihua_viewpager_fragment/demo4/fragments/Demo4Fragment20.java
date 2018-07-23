@@ -31,6 +31,6 @@ public class Demo4Fragment20 extends BaseIndexNetFragment {
     @Override
     protected void setup(View rootView, @Nullable Bundle savedInstanceState) {
         super.setup(rootView, savedInstanceState);
-        tv1= (TextView) rootView.findViewById(R.id.tv20);
+        tv1= rootView.findViewById(R.id.tv20);
     }
 }

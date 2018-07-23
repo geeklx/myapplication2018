@@ -79,13 +79,7 @@ public class CameraUtil {
 
     public boolean equalRate(Size s, float rate){
         float r = (float)(s.width)/(float)(s.height);
-        if(Math.abs(r - rate) <= 0.2)
-        {
-            return true;
-        }
-        else{
-            return false;
-        }
+        return Math.abs(r - rate) <= 0.2;
     }
 
     public  class CameraSizeComparator implements Comparator<Size> {

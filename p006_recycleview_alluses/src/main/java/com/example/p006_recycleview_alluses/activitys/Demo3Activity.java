@@ -25,7 +25,7 @@ public class Demo3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycleview_demo3);
-        mRecyclerView = (RecyclerView) findViewById(R.id.list);
+        mRecyclerView = findViewById(R.id.list);
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this, VERTICAL));
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(OrientationHelper.VERTICAL);

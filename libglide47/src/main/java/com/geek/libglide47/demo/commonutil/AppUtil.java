@@ -18,10 +18,7 @@ public class AppUtil {
     }
 
     public static <T> boolean isEmpty(List<T> list) {
-        if (list == null || list.size() == 0) {
-            return true;
-        }
-        return false;
+        return list == null || list.size() == 0;
     }
 
     // 判断网络是否可用
@@ -47,10 +44,7 @@ public class AppUtil {
     public static boolean isWiFiAvailable(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isAvailable() && networkInfo.getType() == ConnectivityManager.TYPE_WIFI) {
-            return true;
-        }
-        return false;
+        return networkInfo != null && networkInfo.isAvailable() && networkInfo.getType() == ConnectivityManager.TYPE_WIFI;
     }
 
     // 获取当前应用的版本号

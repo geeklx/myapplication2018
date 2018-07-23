@@ -154,8 +154,7 @@ public class Glin {
         private boolean isFullUrl(String url) {
             if (url == null || url.length() == 0) { return false;}
             if (url.toLowerCase().startsWith("http://")) { return true;}
-            if (url.toLowerCase().startsWith("https://")) {return true;}
-            return false;
+            return url.toLowerCase().startsWith("https://");
         }
 
         private Params params(Method method, Object[] args) {

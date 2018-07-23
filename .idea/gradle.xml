@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/libanimation" />
             <option value="$PROJECT_DIR$/libglide47" />
             <option value="$PROJECT_DIR$/librararyforfileprovdider" />
+            <option value="$PROJECT_DIR$/libraryglide37sinayulan" />
             <option value="$PROJECT_DIR$/librecycleview" />
             <option value="$PROJECT_DIR$/libutils" />
             <option value="$PROJECT_DIR$/otherlibs" />
@@ -35,6 +36,8 @@
             <option value="$PROJECT_DIR$/p015_view_huxi" />
             <option value="$PROJECT_DIR$/p016_glide37_quan" />
             <option value="$PROJECT_DIR$/p016_glide47_quan" />
+            <option value="$PROJECT_DIR$/p017_sina_datuyulan" />
+            <option value="$PROJECT_DIR$/p018_activity_animation_gensuidonghua" />
             <option value="$PROJECT_DIR$/p020_timer" />
             <option value="$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment" />
             <option value="$PROJECT_DIR$/p048_collapsingtoolbarlayout" />

@@ -160,7 +160,7 @@ public class DeviceUtil {
     }
 
     public static String getImei(Context context) {
-        TelephonyManager phonyManager = ((TelephonyManager) context.getSystemService(context.TELEPHONY_SERVICE));
+        TelephonyManager phonyManager = ((TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE));
 
         return getDeviceID(phonyManager);
     }

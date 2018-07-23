@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/libanimation/libanimation.iml" filepath="$PROJECT_DIR$/libanimation/libanimation.iml" />
       <module fileurl="file://$PROJECT_DIR$/libglide47/libglide47.iml" filepath="$PROJECT_DIR$/libglide47/libglide47.iml" />
       <module fileurl="file://$PROJECT_DIR$/librararyforfileprovdider/librararyforfileprovdider.iml" filepath="$PROJECT_DIR$/librararyforfileprovdider/librararyforfileprovdider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryglide37sinayulan/libraryglide37sinayulan.iml" filepath="$PROJECT_DIR$/libraryglide37sinayulan/libraryglide37sinayulan.iml" />
       <module fileurl="file://$PROJECT_DIR$/librecycleview/librecycleview.iml" filepath="$PROJECT_DIR$/librecycleview/librecycleview.iml" />
       <module fileurl="file://$PROJECT_DIR$/libutils/libutils.iml" filepath="$PROJECT_DIR$/libutils/libutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/myapplication2018.iml" filepath="$PROJECT_DIR$/myapplication2018.iml" />
@@ -30,6 +31,8 @@
       <module fileurl="file://$PROJECT_DIR$/p015_view_huxi/p015_view_huxi.iml" filepath="$PROJECT_DIR$/p015_view_huxi/p015_view_huxi.iml" />
       <module fileurl="file://$PROJECT_DIR$/p016_glide37_quan/p016_glide37_quan.iml" filepath="$PROJECT_DIR$/p016_glide37_quan/p016_glide37_quan.iml" />
       <module fileurl="file://$PROJECT_DIR$/p016_glide47_quan/p016_glide47_quan.iml" filepath="$PROJECT_DIR$/p016_glide47_quan/p016_glide47_quan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p017_sina_datuyulan/p017_sina_datuyulan.iml" filepath="$PROJECT_DIR$/p017_sina_datuyulan/p017_sina_datuyulan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p018_activity_animation_gensuidonghua/p018_activity_animation_gensuidonghua.iml" filepath="$PROJECT_DIR$/p018_activity_animation_gensuidonghua/p018_activity_animation_gensuidonghua.iml" />
       <module fileurl="file://$PROJECT_DIR$/p020_timer/p020_timer.iml" filepath="$PROJECT_DIR$/p020_timer/p020_timer.iml" />
       <module fileurl="file://$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment/p031_mokuaihua_viewpager_fragment.iml" filepath="$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment/p031_mokuaihua_viewpager_fragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/p048_collapsingtoolbarlayout/p048_collapsingtoolbarlayout.iml" filepath="$PROJECT_DIR$/p048_collapsingtoolbarlayout/p048_collapsingtoolbarlayout.iml" />

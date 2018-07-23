@@ -114,7 +114,7 @@ public class LocActivity extends CheckPermissionsActivity {
 
     private void findview(Bundle savedInstanceState) {
         tv1 = findViewById(R.id.tv1);
-        mapView = (MapView) findViewById(R.id.map);
+        mapView = findViewById(R.id.map);
         mapView.onCreate(savedInstanceState);// 此方法必须重写
         aMap = mapView.getMap();
         //设置希望展示的地图缩放级别

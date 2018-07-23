@@ -6,6 +6,7 @@ include ':libutils'
 include ':libglide47'
 include ':libanimation'
 include ':librecycleview'
+include ':libraryglide37sinayulan'
 
 include ':otherlibs',
         ':otherlibs:libWSLive',
@@ -38,6 +39,8 @@ include ':p048_collapsingtoolbarlayout'
 include ':p015_view_huxi'
 include ':p016_glide37_quan'
 include ':p016_glide47_quan'
+include ':p017_sina_datuyulan'
+include ':p018_activity_animation_gensuidonghua'
 
 
 //project end

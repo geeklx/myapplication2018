@@ -43,7 +43,7 @@ public class ListViewTestFragment extends Fragment
     {
         initDatas();
 
-        mListView = (ListView) view.findViewById(R.id.id_listview);
+        mListView = view.findViewById(R.id.id_listview);
         mListView.setAdapter(new CommonAdapter<List<String>>(getActivity(), R.layout.item_for_listview, mDatas)
         {
             Map<Integer, Set<Integer>> selectedMap = new HashMap<Integer, Set<Integer>>();

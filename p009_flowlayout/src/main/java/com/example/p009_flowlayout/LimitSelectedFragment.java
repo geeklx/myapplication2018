@@ -37,7 +37,7 @@ public class LimitSelectedFragment extends Fragment
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState)
     {
         final LayoutInflater mInflater = LayoutInflater.from(getActivity());
-        mFlowLayout = (TagFlowLayout) view.findViewById(R.id.id_flowlayout);
+        mFlowLayout = view.findViewById(R.id.id_flowlayout);
         mFlowLayout.setMaxSelectCount(3);
         mFlowLayout.setAdapter(new TagAdapter<String>(mVals)
         {

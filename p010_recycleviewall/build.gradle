@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 
-def demo = '0000';//DemoAPK
-def demo1 = '0001';//DemoAPK1
-def demo2 = '0002';//DemoAPK2
-def demo3 = '0003';//DemoAPK3
-def demo4 = '0004';//DemoAPK4
-def demo5 = '0005';//DemoAPK5
-def demo6 = '0006';//DemoAPK6
+def demo = '0000'//DemoAPK
+def demo1 = '0001'//DemoAPK1
+def demo2 = '0002'//DemoAPK2
+def demo3 = '0003'//DemoAPK3
+def demo4 = '0004'//DemoAPK4
+def demo5 = '0005'//DemoAPK5
+def demo6 = '0006'//DemoAPK6
 
 
 android {
@@ -100,12 +100,12 @@ android {
         }
     }
 
-    def int minSdk = 21;
-    def int targetSdk = 27;
-    def String appId = 'com.shining.p010_recycleviewall';
+    int minSdk = 21
+    int targetSdk = 27
+    String appId = 'com.shining.p010_recycleviewall'
 
-    def int vCode = 1;
-    def String vNameCode = vCode + "";
+    int vCode = 1
+    String vNameCode = vCode + ""
 
     // 自定义输出配置 classpath 'com.android.tools.build:gradle:3.0.0'
     android.applicationVariants.all { variant ->

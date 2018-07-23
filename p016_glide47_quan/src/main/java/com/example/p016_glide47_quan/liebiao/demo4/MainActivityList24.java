@@ -108,13 +108,8 @@ public class MainActivityList24 extends AppCompatActivity {
                         mAdapter.setContacts(lists);
 
                         // adapter
-                        mAdapter.list_clearall();
-                        for (Biaoge_listBean bean : mAdapter.getMratings()) {
-                            bean.setEnchoose(false);
-                        }
                         mAdapter.setEnallchoose(false);
-
-                        mAdapter.notifyDataSetChanged();
+                        shezhi_shuju_chushihua();
                     }
                 }, 3000);
             }
@@ -145,11 +140,7 @@ public class MainActivityList24 extends AppCompatActivity {
                     mAdapter.setEnallchoose(false);
                 }
                 shezhi_quanxuan_gougou(tv11, 0, R.drawable.iv_sku_unchecked, R.drawable.iv_sku_checked);
-                for (Biaoge_listBean bean1 : mAdapter.getMratings()) {
-                    bean1.setEnchoose(false);
-                }
-                mAdapter.list_clearall();
-                mAdapter.notifyDataSetChanged();
+                shezhi_shuju_chushihua();
             }
         });
         // 批量选中bufen
@@ -159,12 +150,12 @@ public class MainActivityList24 extends AppCompatActivity {
                 Biaoge_listBean bean = (Biaoge_listBean) mAdapter.getItem(pos);
                 if (!enchoose) {
                     //设置已选状态bufen
-                    ((ImageView) view).setBackgroundResource(R.drawable.iv_sku_checked);
+                    view.setBackgroundResource(R.drawable.iv_sku_checked);
                     bean.setEnchoose(true);
                     mAdapter.list_addone(bean);
                 } else {
                     //设置未选状态bufen
-                    ((ImageView) view).setBackgroundResource(R.drawable.iv_sku_unchecked);
+                    view.setBackgroundResource(R.drawable.iv_sku_unchecked);
                     bean.setEnchoose(false);
                     mAdapter.list_removeone(bean);
                 }
@@ -215,6 +206,17 @@ public class MainActivityList24 extends AppCompatActivity {
             drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
             tv1.setCompoundDrawables(drawable, null, null, null);
         }
+    }
+
+    /**
+     * 设置数据初始化bufen
+     */
+    public void shezhi_shuju_chushihua(){
+        for (Biaoge_listBean bean1 : mAdapter.getMratings()) {
+            bean1.setEnchoose(false);
+        }
+        mAdapter.list_clearall();
+        mAdapter.notifyDataSetChanged();
     }
 
     private List<Biaoge_listBean> getList(int pos) {

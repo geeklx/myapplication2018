@@ -311,10 +311,7 @@ public class RingUtil {
             Log.e("---geek-----",type+"   "+sum);
 
         }
-        if (sum > 0) {
-            return true;
-        }
-        return false;
+        return sum > 0;
     }
 
     /**

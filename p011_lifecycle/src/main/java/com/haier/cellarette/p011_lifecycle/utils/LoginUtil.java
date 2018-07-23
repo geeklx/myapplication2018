@@ -42,11 +42,7 @@ public class LoginUtil {
      * @return
      */
     public static boolean isUserLogin() {
-        if (!TextUtils.isEmpty(SpUtils.getInstance(App.get()).get(ConstantsUtil.user_id, "").toString())) {
-            return true;
-        } else {
-            return false;
-        }
+        return !TextUtils.isEmpty(SpUtils.getInstance(App.get()).get(ConstantsUtil.user_id, "").toString());
     }
 
     public void loginToDo(Activity activity, Runnable runnable) {

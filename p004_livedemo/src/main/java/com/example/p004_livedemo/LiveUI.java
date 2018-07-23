@@ -46,31 +46,31 @@ public class LiveUI implements View.OnClickListener {
     }
 
     private void init() {
-        btnStartStreaming = (Button) activity.findViewById(R.id.btn_startStreaming);
+        btnStartStreaming = activity.findViewById(R.id.btn_startStreaming);
         btnStartStreaming.setOnClickListener(this);
 
-        btnStopStreaming = (Button) activity.findViewById(R.id.btn_stopStreaming);
+        btnStopStreaming = activity.findViewById(R.id.btn_stopStreaming);
         btnStopStreaming.setOnClickListener(this);
 
-        btnStartRecord = (Button) activity.findViewById(R.id.btn_startRecord);
+        btnStartRecord = activity.findViewById(R.id.btn_startRecord);
         btnStartRecord.setOnClickListener(this);
 
-        btnStopRecord = (Button) activity.findViewById(R.id.btn_stopRecord);
+        btnStopRecord = activity.findViewById(R.id.btn_stopRecord);
         btnStopRecord.setOnClickListener(this);
 
-        btnFliter = (Button) activity.findViewById(R.id.btn_filter);
+        btnFliter = activity.findViewById(R.id.btn_filter);
         btnFliter.setOnClickListener(this);
 
-        btnSwapCamera = (Button) activity.findViewById(R.id.btn_swapCamera);
+        btnSwapCamera = activity.findViewById(R.id.btn_swapCamera);
         btnSwapCamera.setOnClickListener(this);
 
-        btnScreenshot = (Button) activity.findViewById(R.id.btn_screenshot);
+        btnScreenshot = activity.findViewById(R.id.btn_screenshot);
         btnScreenshot.setOnClickListener(this);
 
-        btnMirror = (Button) activity.findViewById(R.id.btn_mirror);
+        btnMirror = activity.findViewById(R.id.btn_mirror);
         btnMirror.setOnClickListener(this);
 
-        imageView = (ImageView) activity.findViewById(R.id.iv_image);
+        imageView = activity.findViewById(R.id.iv_image);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

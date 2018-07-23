@@ -94,10 +94,10 @@ public class Demo1Fragment2 extends BaseIndexNetFragment implements View.OnClick
     };
 
     private void findview(View rootView) {
-        lightNum = (TextView) rootView.findViewById(R.id.light_num);
-        lightSeek = (VerticalSeekBar) rootView.findViewById(R.id.light_seek);
-        lightAdd = (ImageView) rootView.findViewById(R.id.light_add);
-        lightDecrease = (ImageView) rootView.findViewById(R.id.light_derease);
+        lightNum = rootView.findViewById(R.id.light_num);
+        lightSeek = rootView.findViewById(R.id.light_seek);
+        lightAdd = rootView.findViewById(R.id.light_add);
+        lightDecrease = rootView.findViewById(R.id.light_derease);
     }
 
     @Override

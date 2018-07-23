@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mIvPhoto = (ImageView) findViewById(R.id.id_iv);
+        mIvPhoto = findViewById(R.id.id_iv);
 
     }
 

@@ -33,7 +33,7 @@ public class Demo6Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycleview_demo6);
-        mRecyclerView = (RecyclerView) findViewById(R.id.list);
+        mRecyclerView = findViewById(R.id.list);
 
         mAdapter = new MultiTypeAdapter();
         mAdapter.register(ItemDemo6.class, new ItemDemo6HeadBinder());

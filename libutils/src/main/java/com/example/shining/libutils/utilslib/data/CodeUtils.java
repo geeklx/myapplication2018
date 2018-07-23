@@ -63,9 +63,7 @@ public class CodeUtils {
             vendor = codeSubstring(76, 77);
             checkNum = codeSubstring(77, 79);
             //判断校验码是否为正确的
-            if (!isRightChecNum()) {
-                return false;
-            }
+            return isRightChecNum();
         }
 
         return true;
@@ -111,11 +109,7 @@ public class CodeUtils {
             return false;
         }
         //优悦的二维码
-        if (qrCodeString.length() == YY_CODE_LENGTH) {
-            // String wifiType = code.substring(0, 64);
-            return true;
-        }
-        return false;
+        return qrCodeString.length() == YY_CODE_LENGTH;
     }
 
     /**
@@ -128,11 +122,8 @@ public class CodeUtils {
             return false;
         }
         //北京的二维码
-        if ((qrCodeString != null) && (qrCodeString.length() == BJ_CODE_LENGTH)) {
-            return true;
-        }
+        return (qrCodeString != null) && (qrCodeString.length() == BJ_CODE_LENGTH);
 
-        return false;
     }
 
     /**

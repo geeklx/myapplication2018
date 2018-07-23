@@ -45,18 +45,18 @@ public class PopSelectRing extends PopupWindow implements View.OnClickListener {
         mMenuView = inflater.inflate(R.layout.popwindow_select_ring, null);
 
 
-        mBtSure = (Button) mMenuView.findViewById(R.id.button_ok);
-        mBtCancel = (Button) mMenuView.findViewById(R.id.button_cancel);
+        mBtSure = mMenuView.findViewById(R.id.button_ok);
+        mBtCancel = mMenuView.findViewById(R.id.button_cancel);
 
-        rl_ring1 = (RelativeLayout) mMenuView.findViewById(R.id.rl_ring1);
-        rl_ring2 = (RelativeLayout) mMenuView.findViewById(R.id.rl_ring2);
-        rl_ring3 = (RelativeLayout) mMenuView.findViewById(R.id.rl_ring3);
-        tv_ring1 = (TextView) mMenuView.findViewById(R.id.tv_ring1);
-        tv_ring2 = (TextView) mMenuView.findViewById(R.id.tv_ring2);
-        tv_ring3 = (TextView) mMenuView.findViewById(R.id.tv_ring3);
-        iv_ring1 = (ImageView) mMenuView.findViewById(R.id.iv_ring1);
-        iv_ring2 = (ImageView) mMenuView.findViewById(R.id.iv_ring2);
-        iv_ring3 = (ImageView) mMenuView.findViewById(R.id.iv_ring3);
+        rl_ring1 = mMenuView.findViewById(R.id.rl_ring1);
+        rl_ring2 = mMenuView.findViewById(R.id.rl_ring2);
+        rl_ring3 = mMenuView.findViewById(R.id.rl_ring3);
+        tv_ring1 = mMenuView.findViewById(R.id.tv_ring1);
+        tv_ring2 = mMenuView.findViewById(R.id.tv_ring2);
+        tv_ring3 = mMenuView.findViewById(R.id.tv_ring3);
+        iv_ring1 = mMenuView.findViewById(R.id.iv_ring1);
+        iv_ring2 = mMenuView.findViewById(R.id.iv_ring2);
+        iv_ring3 = mMenuView.findViewById(R.id.iv_ring3);
 
 
         mBtSure.setOnClickListener(this);

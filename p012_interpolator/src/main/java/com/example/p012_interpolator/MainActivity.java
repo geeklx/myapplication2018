@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onAnimationUpdate(ValueAnimator animation) {
                         ((TextView) view).setText("$ "
-                                + (Integer) animation.getAnimatedValue());
+                                + animation.getAnimatedValue());
                     }
                 });
         valueAnimator.setDuration(3000);

@@ -56,7 +56,7 @@ public class CommonUserFragment extends Fragment {
     }
 
     private void findView(View view) {
-        recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view1);
+        recyclerView = view.findViewById(R.id.recycler_view1);
         createAdapter();
     }
 

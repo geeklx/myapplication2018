@@ -34,7 +34,7 @@ public class LocUtil {
             getLocation(context,null);
         }
         return bean;
-    };
+    }
 
     public static void getLocation(Context context, final LocListener listener){
         LocManager loc = new LocManager();

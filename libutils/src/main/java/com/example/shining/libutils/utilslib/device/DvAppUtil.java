@@ -83,7 +83,7 @@ public class DvAppUtil {
         List<RunningServiceInfo> servicesList = activityManager.getRunningServices(Integer.MAX_VALUE);
         Iterator<RunningServiceInfo> l = servicesList.iterator();
         while (l.hasNext()) {
-            RunningServiceInfo si = (RunningServiceInfo) l.next();
+            RunningServiceInfo si = l.next();
             if (className.equals(si.service.getClassName())) {
                 isRunning = true;
             }
@@ -129,10 +129,7 @@ public class DvAppUtil {
                 @Override
                 public boolean accept(File pathname) {
                     //Check if filename is "cpu", followed by a single digit number
-                    if (Pattern.matches("cpu[0-9]", pathname.getName())) {
-                        return true;
-                    }
-                    return false;
+                    return Pattern.matches("cpu[0-9]", pathname.getName());
                 }
 
             });
@@ -207,11 +204,8 @@ public class DvAppUtil {
         ConnectivityManager connectivityManager = (ConnectivityManager) context
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetInfo = connectivityManager.getActiveNetworkInfo();
-        if (activeNetInfo != null
-                && activeNetInfo.getType() == ConnectivityManager.TYPE_WIFI) {
-            return true;
-        }
-        return false;
+        return activeNetInfo != null
+                && activeNetInfo.getType() == ConnectivityManager.TYPE_WIFI;
     }
 
     /**
@@ -224,11 +218,8 @@ public class DvAppUtil {
         ConnectivityManager connectivityManager = (ConnectivityManager) context
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetInfo = connectivityManager.getActiveNetworkInfo();
-        if (activeNetInfo != null
-                && activeNetInfo.getType() == ConnectivityManager.TYPE_MOBILE) {
-            return true;
-        }
-        return false;
+        return activeNetInfo != null
+                && activeNetInfo.getType() == ConnectivityManager.TYPE_MOBILE;
     }
 
     /**

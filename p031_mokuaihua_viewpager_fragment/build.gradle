@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
-def demo1 = '0001';//DemoAPK1
-def demo2 = '0002';//DemoAPK2
+def demo1 = '0001'//DemoAPK1
+def demo2 = '0002'//DemoAPK2
 
 android {
     lintOptions {
@@ -86,12 +86,12 @@ android {
         }
     }
 
-    def int minSdk = 21;
-    def int targetSdk = 27;
-    def String appId = 'com.example.p031_mokuaihua_viewpager_fragment';
+    int minSdk = 21
+    int targetSdk = 27
+    String appId = 'com.example.p031_mokuaihua_viewpager_fragment'
 
-    def int vCode = 1;
-    def String vNameCode = vCode + "";
+    int vCode = 1
+    String vNameCode = vCode + ""
 
     // 自定义输出配置 classpath 'com.android.tools.build:gradle:3.0.0'
     android.applicationVariants.all { variant ->

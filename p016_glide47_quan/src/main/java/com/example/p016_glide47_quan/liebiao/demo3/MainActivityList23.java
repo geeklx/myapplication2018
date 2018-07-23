@@ -34,7 +34,7 @@ public class MainActivityList23 extends AppCompatActivity {
     }
 
     private void donetwork() {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view1);
+        recyclerView = findViewById(R.id.recycler_view1);
         mAdapter = new RecycleAdapter23(this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(mAdapter);

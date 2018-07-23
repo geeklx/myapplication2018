@@ -44,11 +44,11 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     }
 
     private void findview() {
-        tv_demo1 = (TextView) findViewById(R.id.tv_demo1);
-        tv_demo2 = (TextView) findViewById(R.id.tv_demo2);
-        tv_demo3 = (TextView) findViewById(R.id.tv_demo3);
-        tv_demo4 = (TextView) findViewById(R.id.tv_demo4);
-        tv_demo5 = (TextView) findViewById(R.id.tv_demo5);
+        tv_demo1 = findViewById(R.id.tv_demo1);
+        tv_demo2 = findViewById(R.id.tv_demo2);
+        tv_demo3 = findViewById(R.id.tv_demo3);
+        tv_demo4 = findViewById(R.id.tv_demo4);
+        tv_demo5 = findViewById(R.id.tv_demo5);
     }
 
     @Override

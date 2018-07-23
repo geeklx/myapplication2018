@@ -50,9 +50,9 @@ public class ImagesActivity extends Activity implements ViewTreeObserver.OnPreDr
         setContentView(R.layout.activity_demo_image_preview);
         StatusBarUtil.setStatusBarTranslucent(this, false);
 
-        viewPager = (ViewPager) findViewById(R.id.viewPager);
-        tvTip = (TextView) findViewById(R.id.tv_tip);
-        rootView = (RelativeLayout) findViewById(R.id.rootView);
+        viewPager = findViewById(R.id.viewPager);
+        tvTip = findViewById(R.id.tv_tip);
+        rootView = findViewById(R.id.rootView);
         screenWidth = DisplayUtil.getScreenWidth(this);
         screenHeight = DisplayUtil.getScreenHeight(this);
 

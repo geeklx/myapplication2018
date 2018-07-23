@@ -24,8 +24,8 @@ public class CategoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
 
-        mTabLayout = (TabLayout) findViewById(R.id.id_tablayout);
-        mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
+        mTabLayout = findViewById(R.id.id_tablayout);
+        mViewPager = findViewById(R.id.id_viewpager);
 
         mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override

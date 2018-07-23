@@ -42,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        image = (ImageView) findViewById(R.id.image);
-        mountain = (ImageView) findViewById(R.id.mountain);
-        text = (TextView) findViewById(R.id.text);
-        percent = (TextView) findViewById(R.id.percent);
+        image = findViewById(R.id.image);
+        mountain = findViewById(R.id.mountain);
+        text = findViewById(R.id.text);
+        percent = findViewById(R.id.percent);
 
         findViewById(R.id.parallel).setOnClickListener(new View.OnClickListener() {
             @Override

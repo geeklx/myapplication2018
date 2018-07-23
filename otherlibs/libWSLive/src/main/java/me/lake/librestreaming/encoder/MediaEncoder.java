@@ -17,8 +17,8 @@ public abstract class MediaEncoder implements Runnable {
 	protected static final int MSG_STOP_RECORDING = 9;
 
 	public interface MediaEncoderListener {
-		public void onPrepared(MediaEncoder encoder);
-		public void onStopped(MediaEncoder encoder);
+		void onPrepared(MediaEncoder encoder);
+		void onStopped(MediaEncoder encoder);
 	}
 
 	protected final Object mSync = new Object();

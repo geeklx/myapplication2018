@@ -34,7 +34,7 @@ public class AddYuanxingActivity2 extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_yuan2);
-        btn_start = (Button) findViewById(R.id.btn_start);
+        btn_start = findViewById(R.id.btn_start);
         pb_1 = findViewById(R.id.pb_1);
         pb_1.setDrawableIds(new int[]{R.drawable.i00, R.drawable.i01, R.drawable.i02, R.drawable.i03, R.drawable.i04, R.drawable.i05, R.drawable.i06});
         pb_2 = findViewById(R.id.pb_2);

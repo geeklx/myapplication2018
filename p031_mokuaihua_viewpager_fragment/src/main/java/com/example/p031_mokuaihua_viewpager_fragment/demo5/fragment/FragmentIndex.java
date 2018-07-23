@@ -33,7 +33,7 @@ public class FragmentIndex extends Fragment {
         if (vRoot == null) {
             vRoot = LayoutInflater.from(mContext).inflate(R.layout.activity_demo5_fragment_index, container, false);
         }
-        tv1 = (TextView) vRoot.findViewById(R.id.tv1);
+        tv1 = vRoot.findViewById(R.id.tv1);
 
 //        initData();
         return vRoot;

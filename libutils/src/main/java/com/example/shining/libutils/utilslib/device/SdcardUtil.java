@@ -115,10 +115,7 @@ public class SdcardUtil {
 	if (mSDCardMemory <= 0) {
 	    return false;
 	}
-	if (mSDCardMemory < space) {
-	    return false;
-	}
-	return true;
+        return mSDCardMemory >= space;
     }
 
     /**

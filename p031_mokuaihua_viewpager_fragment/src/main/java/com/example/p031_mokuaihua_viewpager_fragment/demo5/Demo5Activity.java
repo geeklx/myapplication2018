@@ -78,7 +78,7 @@ public class Demo5Activity extends AppCompatActivity {
     }
 
     private void findview() {
-        mCateTabLayout = (TabLayout) findViewById(R.id.tab);
+        mCateTabLayout = findViewById(R.id.tab);
 
     }
 

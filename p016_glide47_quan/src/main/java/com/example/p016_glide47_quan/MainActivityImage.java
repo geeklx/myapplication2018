@@ -54,8 +54,8 @@ public class MainActivityImage extends AppCompatActivity {
 
 
     private void findview() {
-        tvTitle = (TextView) findViewById(R.id.tv_title);
-        nineImageView = (NineImageView) findViewById(R.id.nineImageView);
+        tvTitle = findViewById(R.id.tv_title);
+        nineImageView = findViewById(R.id.nineImageView);
         nineImageView.setVis_more(true);
     }
 

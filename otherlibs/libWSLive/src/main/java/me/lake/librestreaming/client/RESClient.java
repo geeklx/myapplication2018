@@ -503,11 +503,7 @@ public class RESClient {
                 throw new RuntimeException("invalid direction rotation flag:back camera is portrait but front camera is landscape");
             }
         }
-        if (fbit == 1) {
-            coreParameters.isPortrait = true;
-        } else {
-            coreParameters.isPortrait = false;
-        }
+        coreParameters.isPortrait = fbit == 1;
         coreParameters.backCameraDirectionMode = backFlag;
         coreParameters.frontCameraDirectionMode = frontFlag;
     }

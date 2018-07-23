@@ -158,8 +158,8 @@ public class Demo4Activity extends FragmentActivity implements OnClickListener, 
     }
 
     private void findview() {
-        mViewPager = (ViewPagerSlide) findViewById(R.id.viewpager_my);
-        mIndicator = (DotIndicatorView) findViewById(R.id.indicator);
+        mViewPager = findViewById(R.id.viewpager_my);
+        mIndicator = findViewById(R.id.indicator);
     }
 
     @Override

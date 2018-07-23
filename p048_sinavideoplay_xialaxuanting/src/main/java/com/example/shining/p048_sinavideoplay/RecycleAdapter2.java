@@ -60,7 +60,7 @@ public class RecycleAdapter2 extends RecyclerView.Adapter<RecycleAdapter2.ViewHo
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.recycleviewbiaoge_list_item, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
-        viewHolder.tv_content_tag1 = (TextView) view.findViewById(R.id.tv_content_tag1);
+        viewHolder.tv_content_tag1 = view.findViewById(R.id.tv_content_tag1);
         return viewHolder;
     }
 

@@ -68,8 +68,8 @@ public class ImagesAdapter extends PagerAdapter implements OnPhotoTapListener, O
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         View view = mInflater.inflate(R.layout.activity_demo_image_item_photoview, container, false);
-        final CircleProgressView progressView = (CircleProgressView) view.findViewById(R.id.progressView);
-        final PhotoView photoView = (PhotoView) view.findViewById(R.id.photoView);
+        final CircleProgressView progressView = view.findViewById(R.id.progressView);
+        final PhotoView photoView = view.findViewById(R.id.photoView);
         photoView.setScaleType(ImageView.ScaleType.FIT_CENTER);
         photoView.setOnPhotoTapListener(this);
         photoView.setOnOutsidePhotoTapListener(this);

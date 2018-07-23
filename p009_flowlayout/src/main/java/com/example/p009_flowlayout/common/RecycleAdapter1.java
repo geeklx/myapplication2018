@@ -76,17 +76,17 @@ public class RecycleAdapter1 extends RecyclerView.Adapter<RecycleAdapter1.ViewHo
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.yijiangou_item1, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
-        viewHolder.iv_imgurl = (SimpleTagImageView) view
+        viewHolder.iv_imgurl = view
                 .findViewById(R.id.iv_ViewPager_Fourthly_Left);
-        viewHolder.tv_content1 = (TextView) view.findViewById(R.id.tv_content1);
-        viewHolder.tv_content2 = (TextView) view.findViewById(R.id.tv_content2);
-        viewHolder.tv_content3 = (TextView) view.findViewById(R.id.tv_content3);
-        viewHolder.tv_content5 = (TextView) view.findViewById(R.id.tv_content5);
-        viewHolder.tv_content6 = (TextView) view.findViewById(R.id.tv_content6);
-        viewHolder.ll_pingjia1 = (LinearLayout) view.findViewById(R.id.ll_pingjia1);
-        viewHolder.layou231 = (FlowLayout) view.findViewById(R.id.layou231);
-        viewHolder.ll_pingjia = (LinearLayout) view.findViewById(R.id.ll_pingjia);
-        viewHolder.layou23 = (FlowLayout) view.findViewById(R.id.layou23);
+        viewHolder.tv_content1 = view.findViewById(R.id.tv_content1);
+        viewHolder.tv_content2 = view.findViewById(R.id.tv_content2);
+        viewHolder.tv_content3 = view.findViewById(R.id.tv_content3);
+        viewHolder.tv_content5 = view.findViewById(R.id.tv_content5);
+        viewHolder.tv_content6 = view.findViewById(R.id.tv_content6);
+        viewHolder.ll_pingjia1 = view.findViewById(R.id.ll_pingjia1);
+        viewHolder.layou231 = view.findViewById(R.id.layou231);
+        viewHolder.ll_pingjia = view.findViewById(R.id.ll_pingjia);
+        viewHolder.layou23 = view.findViewById(R.id.layou23);
         return viewHolder;
     }
 
@@ -120,8 +120,8 @@ public class RecycleAdapter1 extends RecyclerView.Adapter<RecycleAdapter1.ViewHo
                 Coupon_listBeanNew tag = ratings.getCoupon_list().get(i);
                 LinearLayout ll = (LinearLayout) View.inflate(context,
                         R.layout.tag_item, null);
-                TextView tv1 = (TextView) ll.findViewById(R.id.tv_content_tag1);
-                TextView tv2 = (TextView) ll.findViewById(R.id.tv_content_tag2);
+                TextView tv1 = ll.findViewById(R.id.tv_content_tag1);
+                TextView tv2 = ll.findViewById(R.id.tv_content_tag2);
                 //第一部分
                 tv1.setTextSize(15.0f);
                 tv1.setText(tag.getCoupon_str());

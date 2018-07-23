@@ -52,7 +52,7 @@ public class SvgPathParser {
      * @param dAttributeOfPath the d attribute of &lt;path&gt; from the XML
      */
     @WorkerThread
-    public static Path parsePath(String dAttributeOfPath) throws Exception {
+    public static Path parsePath(String dAttributeOfPath) {
         int n = dAttributeOfPath.length();
         ParserHelper helper = new ParserHelper(dAttributeOfPath, 0);
         helper.skipWhitespace();

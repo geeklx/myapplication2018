@@ -43,11 +43,11 @@ public class SingleImagePhotoViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo_image_yulan2);
 
-        glideImageView = (PhotoView) findViewById(R.id.glideImageView);
+        glideImageView = findViewById(R.id.glideImageView);
 
-        progressView1 = (CircleProgressView) findViewById(R.id.progressView1);
-        progressView2 = (CircleProgressView) findViewById(R.id.progressView2);
-        progressView3 = (CircleProgressView) findViewById(R.id.progressView3);
+        progressView1 = findViewById(R.id.progressView1);
+        progressView2 = findViewById(R.id.progressView2);
+        progressView3 = findViewById(R.id.progressView3);
         maskView = findViewById(R.id.maskView);
 
         image_url = getIntent().getStringExtra(KEY_IMAGE_URL);

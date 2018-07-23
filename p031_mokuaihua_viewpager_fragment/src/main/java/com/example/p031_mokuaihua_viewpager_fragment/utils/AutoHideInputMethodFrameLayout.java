@@ -50,10 +50,7 @@ public class AutoHideInputMethodFrameLayout extends FrameLayout {
     private boolean shouldHideInputMethod(View focusView, MotionEvent event) {
         Rect rect = new Rect();
         focusView.getHitRect(rect);
-        if(rect.contains((int)event.getX(), (int)event.getY())) {
-            return false;
-        }
-        return true;
+        return !rect.contains((int) event.getX(), (int) event.getY());
     }
 
     private void hideInputMethod(Activity activity) {

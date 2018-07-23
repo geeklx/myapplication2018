@@ -85,21 +85,21 @@ public class TimerDemoActivity extends Activity implements View.OnClickListener 
     }
 
     private void findView() {
-        mCateTabLayout = (TabLayout) findViewById(R.id.tab);
-        rl_tab = (RelativeLayout) findViewById(R.id.rl_tab);
-        ll_home = (LinearLayout) findViewById(R.id.home);
-        ll_back = (LinearLayout) findViewById(R.id.back);
-        tp_hour = (TimerPicker) findViewById(R.id.tp_hour);
-        tp_min = (TimerPicker) findViewById(R.id.tp_min);
-        tp_sec = (TimerPicker) findViewById(R.id.tp_sec);
-        tv_voice_select = (TextView) findViewById(R.id.tv_voice_select);
-        tv_select = (TextView) findViewById(R.id.tv_select);
-        mTimeView = (LinearLayout) findViewById(R.id.ll_starttime);
-        timer_count_layout = (RelativeLayout) findViewById(R.id.rl_timer_count_layout);
-        rl_onclick = (RelativeLayout) findViewById(R.id.rl_onclick);
-        mStartButton = (Button) findViewById(R.id.button_start);
-        mCancelButton = (Button) findViewById(R.id.button_cancel);
-        tv_hour_decade = (TextView) findViewById(R.id.tv_hour_decade);
+        mCateTabLayout = findViewById(R.id.tab);
+        rl_tab = findViewById(R.id.rl_tab);
+        ll_home = findViewById(R.id.home);
+        ll_back = findViewById(R.id.back);
+        tp_hour = findViewById(R.id.tp_hour);
+        tp_min = findViewById(R.id.tp_min);
+        tp_sec = findViewById(R.id.tp_sec);
+        tv_voice_select = findViewById(R.id.tv_voice_select);
+        tv_select = findViewById(R.id.tv_select);
+        mTimeView = findViewById(R.id.ll_starttime);
+        timer_count_layout = findViewById(R.id.rl_timer_count_layout);
+        rl_onclick = findViewById(R.id.rl_onclick);
+        mStartButton = findViewById(R.id.button_start);
+        mCancelButton = findViewById(R.id.button_cancel);
+        tv_hour_decade = findViewById(R.id.tv_hour_decade);
         vline1 = findViewById(R.id.vline1);
         vline2 = findViewById(R.id.vline2);
 
@@ -405,11 +405,7 @@ public class TimerDemoActivity extends Activity implements View.OnClickListener 
      * @return
      */
     public boolean isStart() {
-        if (mStartButton.getText().toString().equals("开始计时")) {
-            return true;
-        } else {
-            return false;
-        }
+        return mStartButton.getText().toString().equals("开始计时");
     }
 
     /**
@@ -418,11 +414,7 @@ public class TimerDemoActivity extends Activity implements View.OnClickListener 
      * @return
      */
     public boolean isPause() {
-        if (mStartButton.getText().toString().equals("暂停")) {
-            return true;
-        } else {
-            return false;
-        }
+        return mStartButton.getText().toString().equals("暂停");
     }
 
     /**
@@ -431,11 +423,7 @@ public class TimerDemoActivity extends Activity implements View.OnClickListener 
      * @return
      */
     public boolean isGoon() {
-        if (mStartButton.getText().toString().equals("继续")) {
-            return true;
-        } else {
-            return false;
-        }
+        return mStartButton.getText().toString().equals("继续");
     }
 
     /**
