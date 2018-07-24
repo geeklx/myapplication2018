@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 					.setImageInfoList(imageInfoList)
 					.setShowDownButton(true)
 					.setShowOriginButton(true)
-					.setFolderName("BigImageViewDownload")
+					.setFolderName("p017_sina_datuyulan")
 					.setScaleLevel(1, 3, 8)
 					.setScaleMode(ImagePreview.MODE_SCALE_TO_MEDIUM_TO_MAX_TO_MIN)
 					.setZoomTransitionDuration(500)
