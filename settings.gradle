@@ -1,4 +1,4 @@
-include ':app', ':p019_shibie_qrcode', ':p001_fitandroid_touxiang_upload'
+include ':app', ':p019_shibie_qrcode', ':p001_fitandroid_touxiang_upload', ':p021_welcome'
 //libs start
 
 include ':librararyforfileprovdider'
