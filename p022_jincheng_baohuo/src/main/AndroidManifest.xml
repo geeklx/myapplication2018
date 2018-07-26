@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.p022_jincheng_baohuo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".demo1.MainActivity1" />
+        <activity
+            android:name=".demo1.OnePiexlActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:finishOnTaskLaunch="false"
+            android:launchMode="singleInstance"
+            android:process=":OnePiexlActivity"
+            android:theme="@style/liveActivityStyle">
+            <intent-filter>
+                <action android:name="hs.act.OnePiexlActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".demo2.MainActivity2">
+            <intent-filter>
+                <action android:name="hs.act.MainActivity2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".demo2.services.WakeReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.wake.gray" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".demo2.services.WhiteService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":white" />
+        <service
+            android:name=".demo2.services.GrayService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":gray" />
+        <service
+            android:name=".demo2.services.GrayService$GrayInnerService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":gray" />
+        <service
+            android:name=".demo2.services.BackgroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":bg" />
+        <service
+            android:name=".demo2.services.WakeReceiver$WakeNotifyService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".demo2.services.WakeReceiver$WakeGrayInnerService"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
