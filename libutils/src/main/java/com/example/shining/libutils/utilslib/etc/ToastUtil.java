@@ -24,7 +24,7 @@ public class ToastUtil {
             toast = Toast.makeText(App.get(), "", Toast.LENGTH_SHORT);
             updToastTextSize(toast);
         }
-        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.setGravity(Gravity.BOTTOM, 0, 0);
         toast.setText(toastText + "");
         toast.show();
     }
@@ -34,7 +34,7 @@ public class ToastUtil {
             toast = Toast.makeText(App.get(), "", Toast.LENGTH_LONG);
             updToastTextSize(toast);
         }
-        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.setGravity(Gravity.BOTTOM, 0, 0);
         toast.setText(toastText + "");
         toast.show();
     }
@@ -65,7 +65,7 @@ public class ToastUtil {
             if (view == null) { return;}
             TextView tv = (TextView) view.getChildAt(0);
             if (tv == null) { return;}
-            tv.setTextSize(20);
+            tv.setTextSize(12);
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (NoSuchFieldException e) {

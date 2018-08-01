@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha
+        android:duration="2000"
+        android:fromAlpha="1.0"
+        android:toAlpha="0" />
+    <!-- 透明度控制动画效果 alpha
+            0.0表示完全透明
+            1.0表示完全不透明
+            以上值取0.0-1.0之间的float数据类型的数字
+    -->
+</set>

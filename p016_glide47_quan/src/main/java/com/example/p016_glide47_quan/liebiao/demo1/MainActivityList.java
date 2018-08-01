@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
@@ -36,7 +37,8 @@ public class MainActivityList extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(mAdapter);
 
-        mratings = getList(1);
+//        mratings = getList(1);
+        mratings = noSameName(getList(1));
         mAdapter.setContacts(mratings);
         mAdapter.notifyDataSetChanged();
 
@@ -77,6 +79,8 @@ public class MainActivityList extends AppCompatActivity {
         for (int i = 0; i < pos; i++) {
             mratings.add(new Biaoge_listBean("11", "https://s3.51cto.com/wyfs02/M01/89/BA/wKioL1ga-u7QnnVnAAAfrCiGnBQ946_middle.jpg", false));
             mratings.add(new Biaoge_listBean("22", "", false));
+            mratings.add(new Biaoge_listBean("22", "", false));
+            mratings.add(new Biaoge_listBean("22", "", false));
             mratings.add(new Biaoge_listBean("33", "https://img.zcool.cn/community/013bce592505d3b5b3086ed49f70e6.gif", false));
             mratings.add(new Biaoge_listBean("44", "https://s3.51cto.com/wyfs02/M01/89/BA/wKioL1ga-u7QnnVnAAAfrCiGnBQ946_middle.jpg", false));
             mratings.add(new Biaoge_listBean("55", "https://img.zcool.cn/community/013bce592505d3b5b3086ed49f70e6.gif", false));
@@ -85,5 +89,41 @@ public class MainActivityList extends AppCompatActivity {
         return mratings;
     }
 
+
+    /**
+     * 去除同名WIFI
+     *
+     * 需要去除同名的列表
+     * @return 返回不包含同命的列表
+     */
+    public List<Biaoge_listBean> noSameName(List<Biaoge_listBean> oldSr)
+    {
+        List<Biaoge_listBean> newSr = new ArrayList<Biaoge_listBean>();
+        for (Biaoge_listBean result : oldSr)
+        {
+            if (!TextUtils.isEmpty(result.getText_content1()) && !containName(newSr, result.getText_content1()))
+                newSr.add(result);
+        }
+        return newSr;
+    }
+
+    /**
+     * 判断一个扫描结果中，是否包含了某个名称的WIFI
+     *
+     * @param sr
+     * 扫描结果
+     * @param name
+     * 要查询的名称
+     * @return 返回true表示包含了该名称的WIFI，返回false表示不包含
+     */
+    public boolean containName(List<Biaoge_listBean> sr, String name)
+    {
+        for (Biaoge_listBean result : sr)
+        {
+            if (!TextUtils.isEmpty(result.getText_content1()) && result.getText_content1().equals(name))
+                return true;
+        }
+        return false;
+    }
 }
 

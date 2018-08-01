@@ -5,74 +5,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="BTN1"
-        android:text="跳转到B" />
+        android:text="demo1" />
 
-    <LinearLayout
-        android:id="@+id/ll1"
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:onClick="BTN2"
+        android:text="demo2" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/tv1"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/a1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/tv2"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/a2" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/tv3"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/a3" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-
-            <ImageView
-                android:id="@+id/tv4"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/a4" />
-        </LinearLayout>
-    </LinearLayout>
 
 </LinearLayout>
