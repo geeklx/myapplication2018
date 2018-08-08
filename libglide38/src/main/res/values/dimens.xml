@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="edge_padding">10dip</dimen>
+    <dimen name="line_space_picture">3dip</dimen>
+    <dimen name="title_height">48dip</dimen>
+
+    <dimen name="title_bar_height">48dp</dimen>
+    <dimen name="title_icon_height">26dp</dimen>
+    <dimen name="title_icon_width">26dp</dimen>
+    <dimen name="title_font_size">18sp</dimen>
+
+    <dimen name="text_size_16">16sp</dimen>
+</resources>

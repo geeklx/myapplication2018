@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geeklx.libglide38" >
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <activity android:name="com.geeklx.libglide38.demo.DemoGlide38MainActivity">
+            <intent-filter>
+                <action android:name="hs.ac.github.DemoGlide38MainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.geeklx.libglide38.demo.DemoGlide38BaseMainActivity">
+            <intent-filter>
+                <action android:name="hs.ac.github.DemoGlide38BaseMainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
